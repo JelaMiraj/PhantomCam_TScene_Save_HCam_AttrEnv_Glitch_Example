@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="PhantomCam_TScene_Save_HCam_AttrEnv_Glitch_Example"
+run/main_scene="res://Scenes/Main_Scene/Main_Scene.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
