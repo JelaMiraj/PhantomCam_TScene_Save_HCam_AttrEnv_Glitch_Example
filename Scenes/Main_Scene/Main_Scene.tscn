@@ -1,5 +1,32 @@
-[gd_scene format=3 uid="uid://csuwnolpwa0lj"]
+[gd_scene load_steps=6 format=3 uid="uid://csuwnolpwa0lj"]
+
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd" id="1_3t4kh"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="2_l6qkv"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/camera_3d_resource.gd" id="3_r8e2n"]
+
+[sub_resource type="Resource" id="Resource_gm1oe"]
+script = ExtResource("2_l6qkv")
+duration = 1.0
+transition = 0
+ease = 2
+
+[sub_resource type="Resource" id="Resource_3b23i"]
+script = ExtResource("3_r8e2n")
+cull_mask = 1048575
+h_offset = 0.0
+v_offset = 0.0
+projection = 0
+fov = 75.0
+size = 1.0
+frustum_offset = Vector2(0, 0)
+near = 0.05
+far = 4000.0
 
 [node name="RootNode3D" type="Node3D"]
 
 [node name="ControlledCamera3D" type="Camera3D" parent="."]
+
+[node name="MyPhantomCamera3D" type="Node3D" parent="."]
+script = ExtResource("1_3t4kh")
+tween_resource = SubResource("Resource_gm1oe")
+camera_3d_resource = SubResource("Resource_3b23i")
