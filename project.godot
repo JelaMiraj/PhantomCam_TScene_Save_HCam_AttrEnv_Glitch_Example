@@ -15,6 +15,14 @@ run/main_scene="res://Scenes/Main_Scene/Main_Scene.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+PhantomCameraManager="*res://addons/phantom_camera/scripts/managers/phantom_camera_manager.gd"
+
 [dotnet]
 
 project/assembly_name="PhantomCam_TScene_Save_HCam_AttrEnv_Glitch_Example"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/phantom_camera/plugin.cfg")
