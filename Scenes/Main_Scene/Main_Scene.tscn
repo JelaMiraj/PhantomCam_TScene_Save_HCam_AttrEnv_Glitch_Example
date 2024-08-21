@@ -7,10 +7,10 @@
 [ext_resource type="Environment" uid="uid://diaywmwljb3f" path="res://Resources/My_Environment_Resource_A.tres" id="5_p7db6"]
 [ext_resource type="CameraAttributesPhysical" uid="uid://cgrbkc0megeyy" path="res://Resources/My_Camera_Attributes_Physical_Resource_A.tres" id="6_cv1iy"]
 
-[sub_resource type="Environment" id="Environment_3nwkh"]
+[sub_resource type="Environment" id="Environment_rswrw"]
 resource_name = "My_Environment_Resource_A"
 
-[sub_resource type="CameraAttributesPhysical" id="CameraAttributesPhysical_bbuii"]
+[sub_resource type="CameraAttributesPhysical" id="CameraAttributesPhysical_2hfmu"]
 resource_name = "My_Camera_Attributes_Physical_Resource_A"
 
 [sub_resource type="Resource" id="Resource_gm1oe"]
@@ -34,8 +34,8 @@ far = 4000.0
 [node name="RootNode3D" type="Node3D"]
 
 [node name="ControlledCamera3D" type="Camera3D" parent="."]
-environment = SubResource("Environment_3nwkh")
-attributes = SubResource("CameraAttributesPhysical_bbuii")
+environment = SubResource("Environment_rswrw")
+attributes = SubResource("CameraAttributesPhysical_2hfmu")
 
 [node name="ThePhantomCameraHost" type="Node" parent="ControlledCamera3D"]
 script = ExtResource("1_3drjc")
